@@ -1,8 +1,16 @@
 <footer>
     <div>© <%= new Date().getFullYear() %> - <%= config.author %> <% if (config.license) { %> , <%= config.license %> <% } %></div>
     <div>
+        <% if (theme.jalinks && theme.jalinks.length){ %>
+            <% theme.jalinks.forEach(function(item){ %>
+            <a href="<%- item.link %>" class="animsition-link" rel="nofollow"><%= item.name %></a> 
+            <% }); %>
+    <% } %>
+    </div>
+    <div>
         <span>
             Powered by <a href="<%= config.url %>"><%= config.title %></a>
         </span>
     </div>
+    
 </footer>
