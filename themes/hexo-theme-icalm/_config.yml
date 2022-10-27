@@ -12,7 +12,10 @@ menu:
 
 rss: /atom.xml
 
-# Content
+jalinks:
+- name: 우리카지노
+  link: https://septcasino.com/
+
 excerpt_link: Read On »
 
 # Will be shown on the bottom.
